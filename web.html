@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Development</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="portfolioStyles.css">
+        <link rel="icon" href="images/rossPortfolioFavicon.png" sizes="32x32">
+        <script src="https://kit.fontawesome.com/6687b22cea.js" crossorigin="anonymous"></script>
+        <header role="banner">
+            <nav role="navigation">
+                <section id="navLogo">
+                    <a href="https://rosswilsonmedia.github.io/portfolio">Ross Wilson</a>
+                </section>
+                <section id="navLinks">
+                    <!-- <a href="https://rosswilsonmedia.github.io/portfolio/video">Videography</a> -->
+                    <a class="active" href="https://rosswilsonmedia.github.io/portfolio/web">Web Development</a>
+                    <a href="https://rosswilsonmedia.github.io/portfolio/graphics">Graphic Design</a>
+                </section>
+                <section id="mobileNavToggle">
+                    <a onclick="toggleMobileNav()"><i class="fas fa-chevron-down"></i></a>
+                </section>
+            </nav>
+        </header>
+    </head>
+    <body>
+        <section id="mobileNav">
+            <ul>
+                <!-- <li><a href="https://rosswilsonmedia.github.io/portfolio/video">Videography</a></li> -->
+                <li><a class="active" href="https://rosswilsonmedia.github.io/portfolio/web">Web Development</a></li>
+                <li><a href="https://rosswilsonmedia.github.io/portfolio/graphics">Graphic Design</a></li>
+            </ul>
+        </section>
+        <main role="main">
+            <section class="projects" id="capstone">
+                <section class="projectInfo">
+                    <h1>World Wide Weather</h1>
+                    <h2>A Source For Weather Across the World </h2>
+                    <p>As a full stack project, <i>World Wide Weather</i> uses a Python Flask server with a MySQL database to serve up real weather data from across the world. Local APIs are used to fetch the data asynchronously after page load, optimizing load times for the user. The site features the ability to change units of measure and create a dashboard of the current weather of a collection of cities through the creation of an account.</p></br>
+                    <a class="inlineLink" href="https://rebrand.ly/worldwideweather" target="_blank">Check out World Wide Weather Now!</a>
+                </section>
+                <section class="projectImage">
+                    <a href="https://rebrand.ly/worldwideweather" target="_blank">
+                        <img src="images/worldWideWeatherSS.jpg" alt="World Wide Weather Preview">
+                    </a>
+                </section>
+            </section>
+            <section class="projects" id="capstone">
+                <section class="projectInfo">
+                    <h1>Messenger</h1>
+                    <h2>A Realtime Group Messaging Service</h2>
+                    <p>Messenger implements React.js and Socket.io to create a dynamic two page application. Running an Express server, the project utilizes a series of API routes which interface with a MongoDB database and trigger Socket.io events to keep all clients updated in realtime. In addition, the use of the Material-UI library gives users a familiar and easy-to-use experience in addition to it's speed.</p></br>
+                    <a class="inlineLink" href="https://rebrand.ly/messengerservice" target="_blank">Check out Messenger now!</a>
+                </section>
+                <section class="projectImage">
+                    <a href="https://rebrand.ly/messengerservice" target="_blank">
+                        <img src="images/messengerSS.jpg" alt="Capstone Virtual Event Logo">
+                    </a>
+                </section>
+            </section>
+            <section class="projects" id="capstone">
+                <section class="projectInfo">
+                    <h1>Capstone Virtual Event</h1>
+                    <h2>A Highlight of Capstone Projects</h2>
+                    <p>The Capstone Virtual Event implements front-end technologies to provide an engaging and visually appealing platform to showcase graduating students capstone projects. The site features a brightly-colored vertical carousel home page and a show mode for watching the event using the YouTube API.</p></br>
+                    <a class="inlineLink" href="https://rosswilsonmedia.github.io/capstone" target="_blank">Check out Capstone Virtual Event now!</a>
+                </section>
+                <section class="projectImage">
+                    <a href="https://rosswilsonmedia.github.io/capstone" target="_blank">
+                        <img src="images/capstoneLogo.png" alt="Capstone Virtual Event Logo">
+                    </a>
+                </section>
+            </section>
+            <section class="projects" id="awah">
+                <section class="projectInfo">
+                    <h1>Art With A Heart</h1>
+                    <h2>A Complete Website Redesign</h2>
+                    <p>Redesigned from the ground up, Art With a Heart was reimagined into a single page web application which provides users with an easy-to-use interface in a lightweight package. Using only the copy and images from the original, the site was redesigned with simplicity and visual engagement in mind.</p></br>
+                    <a class="inlineLink" href="https://rosswilsonmedia.github.io/artWithAHeart" target="_blank">Check out Art With a Heart now!</a>
+                </section>
+                <section class="projectImage">
+                    <a href="https://rosswilsonmedia.github.io/artWithAHeart" target="_blank">
+                        <img src="images/awahBackground.jpg" alt="Art With A Heart Collage">
+                    </a>
+                </section>
+            </section>
+            <section class="projects" id="portfolio">
+                <section class="projectInfo">
+                    <h1>GitHub</h1>
+                    <!-- <h2>Other Code of Mine</h2> -->
+                    <p>Last but not least, feel free to check out my GitHub to examples of other smaller projects and challenges I have done!</p></br>
+                    <a class="inlineLink" href="https://github.com/rosswilsonmedia" target="_blank">Check out my GitHub @rosswilsonmedia</a>
+                </section>
+                <section class="projectImage">
+                    <a href="https://github.com/rosswilsonmedia">
+                        <img src="images/rossPortfolioLogo.png" alt="Ross Wilson Portfolio Logo">
+                    </a>
+                </section>
+            </section>
+            <footer role="contentinfo">
+                <p>&copy; 2021 Ross Wilson</p>
+            </footer>
+        </main>
+        <script type="text/javascript" src="js/mobileNav.js"></script>
+    </body>
+</html>
